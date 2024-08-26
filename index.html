@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Toggle</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <style>
+        .box{
+            border: 1px solid;
+            width: 50%;
+            margin: auto;
+            padding: 2%;
+            margin-bottom: 5%;
+        }
+        h1{
+            text-align: center;
+        }
+        button{
+            cursor: pointer;
+            float: right;
+            border-radius: 5px;
+            padding: 5px;
+            border: none;
+            background-color: paleturquoise;
+        }
+    </style>
+</head>
+<body>
+    <script>
+            $(document).ready(function(){
+            $('.btn1').click(function(){
+                $('.txt1').slideToggle()
+
+            })
+        })
+        $(document).ready(function(){
+            $('.btn2').click(function(){
+                $('.txt2').fadeToggle()
+
+            })
+        })
+        $(document).ready(function(){
+            $('.btn3').click(function(){
+                $('.txt3').fadeToggle()
+
+            })
+        })
+    </script>
+    <h1>FAQ</h1>
+    <div class="box">
+        <span>what is RahaPay</span>
+        <button class="btn1">click me</button>
+        <p class="txt1">Rahapay is a data service app for purchasing data bundles at a cheaper rate </p>
+    </div>
+    <div class="box">
+        <span>what is RahaPay</span>
+        <button class="btn2">click me</button>
+        <p class="txt2">Rahapay is a dataservice app for purchasing data bundles at a cheaper rate </p>
+    </div>
+    <div class="box">
+        <span>what is RahaPay</span>
+        <button class="btn3">click me</button>
+        <p class="txt3">Rahapay is a dataservice app for purchasing data bundles at a cheaper rate </p>
+    </div>
+
+</body>
+</html>
